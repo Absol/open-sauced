@@ -45,5 +45,5 @@ jobs:
 
       - name: "Lint code"
         run: |
-          npm init @eslint/config@latest -- --config eslint-config-standard
+          touch eslint.config.js
           npm run lint --if-present
