@@ -42,7 +42,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18.18
-        run: npm init @eslint/config@latest -- --config eslint-config-standard
 
       - name: "Lint code"
+        run: npm init @eslint/config@latest -- --config eslint-config-standard
         run: npm run lint --if-present
