@@ -44,5 +44,6 @@ jobs:
           node-version: 18.18
 
       - name: "Lint code"
-        run: npm init @eslint/config@latest -- --config eslint-config-standard
-        run: npm run lint --if-present
+        run: |
+          npm init @eslint/config@latest -- --config eslint-config-standard
+          npm run lint --if-present
